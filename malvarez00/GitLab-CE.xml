@@ -52,10 +52,10 @@
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="SSH Port" Target="22" Default="9022" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always-hide" Required="false" Mask="false">9022</Config>
-  <Config Name="Web Interface Port (HTTP)" Target="80" Default="9080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always-hide" Required="false" Mask="false">9080</Config>
+  <Config Name="SSH Port" Target="22" Default="9022" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always-hide" Required="true" Mask="false">9022</Config>
+  <Config Name="Web Interface Port (HTTP)" Target="80" Default="9080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always-hide" Required="true" Mask="false">9080</Config>
   <Config Name="Web Interface Port (HTTPS)" Target="443" Default="9443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always-hide" Required="true" Mask="false">9443</Config>
   <Config Name="Application Data Path" Target="/var/opt/gitlab" Default="/mnt/cache/appdata/gitlab-ce2/data" Mode="rw" Description="It is used for storing application data" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/gitlab-ce/data</Config>
-  <Config Name="Logs Path" Target="/var/log/gitlab" Default="/mnt/cache/appdata/gitlab-ce2/log" Mode="rw" Description="It is used for storing logs" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/gitlab-celog</Config>
+  <Config Name="Logs Path" Target="/var/log/gitlab" Default="/mnt/cache/appdata/gitlab-ce2/log" Mode="rw" Description="It is used for storing logs" Type="Path" Display="advanced-hide" Required="true" Mask="tru">/mnt/cache/appdata/gitlab-celog</Config>
   <Config Name="Configuration Path" Target="/etc/gitlab" Default="/mnt/cache/appdata/gitlab-ce2/config" Mode="rw" Description="It is used for storing configuration" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/gitlab-ce/config</Config>
 </Container>

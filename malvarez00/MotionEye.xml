@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MotionEye</Name>
+  <Repository>jshridha/motioneye</Repository>
+  <Registry>https://hub.docker.com/r/jshridha/motioneye/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview>Motioneye Docker&#xD;
+A surveillance solution base on, MotionEye, Motion and Docker.&#xD;
+&#xD;
+It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
+videos and images will be saved once a motion is detected while a notification&#xD;
+e-mail including the recorded video and a preview image will be sent. On top of&#xD;
+that, the webcam can be accessed anytime via HTTP live streaming.&#xD;
+&#xD;
+Default Username: Admin&#xD;
+Default Password: BLANK&#xD;
+&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8765]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <DateInstalled>1508131449</DateInstalled>
+  <Description>Motioneye Docker&#xD;
+A surveillance solution base on, MotionEye, Motion and Docker.&#xD;
+&#xD;
+It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
+videos and images will be saved once a motion is detected while a notification&#xD;
+e-mail including the recorded video and a preview image will be sent. On top of&#xD;
+that, the webcam can be accessed anytime via HTTP live streaming.&#xD;
+&#xD;
+Default Username: Admin&#xD;
+Default Password: BLANK&#xD;
+&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8765</HostPort>
+        <ContainerPort>8765</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/motioneye/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/motioneye/media</HostDir>
+      <ContainerDir>/home/nobody/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Motion API" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always-hide" Required="true" Mask="false">8081</Config>
+  <Config Name="MotionEye Interface" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="true" Mask="false">8765</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always-hide" Required="true" Mask="false">100</Config>
+  <Config Name="MotionEye Configuration Path" Target="/config" Default="/mnt/cache/appdata/motioneye/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/motioneye/config</Config>
+  <Config Name="MotionEye Media Path" Target="/home/nobody/media" Default="/mnt/cache/appdata/motioneye/media" Mode="rw" Description="Container Path: /home/nobody/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/motioneye/media</Config>
+</Container>

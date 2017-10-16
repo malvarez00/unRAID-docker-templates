@@ -10,7 +10,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:9080]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/malvarez00/unRAID-Docker-Templates/blob/master/malvarez00/icons/gitlab.png<Icon/>
   <ExtraParams/>
   <DateInstalled>1508107677</DateInstalled>
   <Description>GitLab Community Edition docker image based on the Omnibus package</Description>

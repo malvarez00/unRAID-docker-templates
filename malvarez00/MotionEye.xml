@@ -6,36 +6,32 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support/>
-  <Overview>Motioneye Docker&#xD;
-A surveillance solution base on, MotionEye, Motion and Docker.&#xD;
-&#xD;
+  <Overview>Motioneye Docker&amp;lt;br /&amp;gt;&#xD;
+A surveillance solution base on, MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br /&amp;gt;&#xD;
 It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
 videos and images will be saved once a motion is detected while a notification&#xD;
 e-mail including the recorded video and a preview image will be sent. On top of&#xD;
-that, the webcam can be accessed anytime via HTTP live streaming.&#xD;
-&#xD;
-Default Username: Admin&#xD;
-Default Password: BLANK&#xD;
-&#xD;
-</Overview>
+that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br /&amp;gt;&#xD;
+Default Username: admin&amp;lt;br /&amp;gt;&#xD;
+Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:8765]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1508131449</DateInstalled>
-  <Description>Motioneye Docker&#xD;
-A surveillance solution base on, MotionEye, Motion and Docker.&#xD;
-&#xD;
+  <DateInstalled>1508377616</DateInstalled>
+  <Description>Motioneye Docker&amp;lt;br /&amp;gt;&#xD;
+A surveillance solution base on, MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br /&amp;gt;&#xD;
 It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
 videos and images will be saved once a motion is detected while a notification&#xD;
 e-mail including the recorded video and a preview image will be sent. On top of&#xD;
-that, the webcam can be accessed anytime via HTTP live streaming.&#xD;
-&#xD;
-Default Username: admin&#xD;
-Default Password: BLANK&#xD;
-&#xD;
-</Description>
+that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br /&amp;gt;&#xD;
+Default Username: admin&amp;lt;br /&amp;gt;&#xD;
+Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -53,7 +49,7 @@ Default Password: BLANK&#xD;
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/motioneye/config</HostDir>
+      <HostDir>/mnt/user/appdata/MotionEye</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -79,6 +75,6 @@ Default Password: BLANK&#xD;
   <Config Name="MotionEye Interface" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="true" Mask="false">8765</Config>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always-hide" Required="true" Mask="false">99</Config>
   <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always-hide" Required="true" Mask="false">100</Config>
-  <Config Name="MotionEye Configuration Path" Target="/config" Default="/mnt/cache/appdata/motioneye/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/motioneye/config</Config>
+  <Config Name="MotionEye Configuration Path" Target="/config" Default="/mnt/user/appdata/MotionEye" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/MotionEye</Config>
   <Config Name="MotionEye Media Path" Target="/home/nobody/media" Default="/mnt/cache/appdata/motioneye/media" Mode="rw" Description="Container Path: /home/nobody/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/motioneye/media</Config>
 </Container>

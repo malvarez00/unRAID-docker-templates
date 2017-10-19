@@ -32,7 +32,7 @@ videos and images will be saved once a motion is detected while a notification&#
 e-mail including the recorded video and a preview image will be sent. On top of&#xD;
 that, the webcam can be accessed anytime via HTTP live streaming.&#xD;
 &#xD;
-Default Username: Admin&#xD;
+Default Username: admin&#xD;
 Default Password: BLANK&#xD;
 &#xD;
 </Description>

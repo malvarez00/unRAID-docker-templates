@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>MotionEye</Name>
-  <Repository>jshridha/motioneye</Repository>
-  <Registry>https://hub.docker.com/r/jshridha/motioneye/</Registry>
+  <Repository>malvarez00/docker-motioneye</Repository>
+  <Registry>https://hub.docker.com/r/malvarez00/docker-motioneye</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support/>
-  <Overview>Motioneye Docker&amp;lt;br /&amp;gt;&#xD;
-A surveillance solution base on, MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
+  <Overview>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
+A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
-It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
-videos and images will be saved once a motion is detected while a notification&#xD;
-e-mail including the recorded video and a preview image will be sent. On top of&#xD;
-that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
+It's easy and ready to use. Just configure a camera and run this docker, then videos and images will be saved once a motion is detected while a notification e-mail including the recorded video and a preview image will be sent. On top of that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Default Username: admin&amp;lt;br /&amp;gt;&#xD;
 Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
@@ -21,25 +18,17 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1508377616</DateInstalled>
-  <Description>Motioneye Docker&amp;lt;br /&amp;gt;&#xD;
-A surveillance solution base on, MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
+  <DateInstalled>1508699474</DateInstalled>
+  <Description>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
+A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
-It's easy and ready to use. Just plug in a webcam and run this docker, then&#xD;
-videos and images will be saved once a motion is detected while a notification&#xD;
-e-mail including the recorded video and a preview image will be sent. On top of&#xD;
-that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
+It's easy and ready to use. Just configure a camera and run this docker, then videos and images will be saved once a motion is detected while a notification e-mail including the recorded video and a preview image will be sent. On top of that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Default Username: admin&amp;lt;br /&amp;gt;&#xD;
 Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
-      <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8081</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
       <Port>
         <HostPort>8765</HostPort>
         <ContainerPort>8765</ContainerPort>
@@ -49,32 +38,18 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/MotionEye</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/MotionEye/config</HostDir>
+      <ContainerDir>/etc/motioneye</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/motioneye/media</HostDir>
-      <ContainerDir>/home/nobody/media</ContainerDir>
+      <HostDir>/mnt/cache/appdata/MotionEye/media</HostDir>
+      <ContainerDir>/var/lib/motioneye</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Config Name="Motion API" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always-hide" Required="true" Mask="false">8081</Config>
-  <Config Name="MotionEye Interface" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="true" Mask="false">8765</Config>
-  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always-hide" Required="true" Mask="false">100</Config>
-  <Config Name="MotionEye Configuration Path" Target="/config" Default="/mnt/user/appdata/MotionEye" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/MotionEye</Config>
-  <Config Name="MotionEye Media Path" Target="/home/nobody/media" Default="/mnt/cache/appdata/motioneye/media" Mode="rw" Description="Container Path: /home/nobody/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/motioneye/media</Config>
+  <Environment/>
+  <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="false" Mask="false">8765</Config>
+  <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/user/appdata/MotionEye/config" Mode="rw" Description="Container Path: /etc/motioneye" Type="Path" Display="always-hide" Required="false" Mask="false">/mnt/user/appdata/MotionEye/config</Config>
+  <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/cache/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="false" Mask="false">/mnt/cache/appdata/MotionEye/media</Config>
 </Container>

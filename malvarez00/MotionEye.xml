@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/malvarez00/docker-motioneye</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.lime-technology.com/topic/61014-support-malvarez00-motioneye/</Support>
   <Overview>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
 A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;

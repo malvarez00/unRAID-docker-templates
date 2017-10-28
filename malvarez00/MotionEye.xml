@@ -18,7 +18,7 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1508699474</DateInstalled>
+  <DateInstalled>1509209935</DateInstalled>
   <Description>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
 A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
@@ -38,18 +38,18 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/MotionEye/config</HostDir>
+      <HostDir>/mnt/cache/appdata/MotionEye/config</HostDir>
       <ContainerDir>/etc/motioneye</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/MotionEye/media</HostDir>
+      <HostDir>/mnt/user/appdata/MotionEye/media</HostDir>
       <ContainerDir>/var/lib/motioneye</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="false" Mask="false">8765</Config>
-  <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/user/appdata/MotionEye/config" Mode="rw" Description="Container Path: /etc/motioneye" Type="Path" Display="always-hide" Required="false" Mask="false">/mnt/user/appdata/MotionEye/config</Config>
-  <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/cache/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="false" Mask="false">/mnt/cache/appdata/MotionEye/media</Config>
+  <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="true" Mask="false">8765</Config>
+  <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/cache/appdata/MotionEye/config" Mode="rw" Description="Container Path: /etc/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/MotionEye/config</Config>
+  <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/user/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/MotionEye/media</Config>
 </Container>

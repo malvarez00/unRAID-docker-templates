@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>UniFi-Video</Name>
+  <Repository>malvarez00/docker-unifi-video</Repository>
+  <Registry>https://hub.docker.com/r/malvarez00/docker-unifi-video</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category/>
+  <WebUI>https://[IP]:[PORT:7443]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/unifi_96x96.png</Icon>
+  <ExtraParams>--cap-add=DAC_READ_SEARCH  --cap-add=NET_BIND_SERVICE --cap-add=SETGID --cap-add=SETUID --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --privileged</ExtraParams>
+  <DateInstalled>1509708141</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7022</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6666</HostPort>
+        <ContainerPort>6666</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7080</HostPort>
+        <ContainerPort>7080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7442</HostPort>
+        <ContainerPort>7442</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7004</HostPort>
+        <ContainerPort>7004</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7443</HostPort>
+        <ContainerPort>7443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7445</HostPort>
+        <ContainerPort>7445</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7447</HostPort>
+        <ContainerPort>7447</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>7446</HostPort>
+        <ContainerPort>7446</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/UniFi-Video/datapath</HostDir>
+      <ContainerDir>/var/lib/unifi-video</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/UniFi-Video/logpath</HostDir>
+      <ContainerDir>/var/log/unifi-video</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Data Path" Target="/var/lib/unifi-video" Default="/mnt/cache/appdata/UniFi-Video/datapath" Mode="rw" Description="Container Path: /var/lib/unifi-video" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/UniFi-Video/datapath</Config>
+  <Config Name="Log Path" Target="/var/log/unifi-video" Default="/mnt/cache/appdata/UniFi-Video/logpath" Mode="rw" Description="Container Path: /var/log/unifi-video" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/UniFi-Video/logpath</Config>
+  <Config Name="SSH" Target="22" Default="7022" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always-hide" Required="true" Mask="false">7022</Config>
+  <Config Name="Inbound Camera Streams (NVR Side)" Target="6666" Default="6666" Mode="tcp" Description="Container Port: 6666" Type="Port" Display="always-hide" Required="true" Mask="false">6666</Config>
+  <Config Name="HTTP Web UI &amp;amp; API (NVR Side)" Target="7080" Default="7080" Mode="tcp" Description="Container Port: 7080" Type="Port" Display="always-hide" Required="true" Mask="false">7080</Config>
+  <Config Name="Camera Management (NVR Side)" Target="7442" Default="7442" Mode="tcp" Description="Container Port: 7442" Type="Port" Display="always-hide" Required="true" Mask="false">7442</Config>
+  <Config Name="UVC-Micro Talkback (Camera Side)" Target="7004" Default="7004" Mode="udp" Description="Container Port: 7004" Type="Port" Display="always-hide" Required="true" Mask="false">7004</Config>
+  <Config Name="HTTPS Web UI &amp;amp; API (NVR Side)" Target="7443" Default="7443" Mode="tcp" Description="Container Port: 7443" Type="Port" Display="always-hide" Required="true" Mask="false">7443</Config>
+  <Config Name="Video over HTTP" Target="7445" Default="7445" Mode="tcp" Description="Container Port: 7445" Type="Port" Display="always-hide" Required="true" Mask="false">7445</Config>
+  <Config Name="RTSP via the controller" Target="7447" Default="7447" Mode="tcp" Description="Container Port: 7447" Type="Port" Display="always-hide" Required="true" Mask="false">7447</Config>
+  <Config Name="Video over HTTPS" Target="7446" Default="7446" Mode="tcp" Description="Container Port: 7446" Type="Port" Display="always-hide" Required="true" Mask="false">7446</Config>
+</Container>

@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/malvarez00/docker-unifi-video</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.lime-technology.com/topic/61187-support-malvarez00-unifi-video/</Support>
   <Overview>Docker-UniFi-Video&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;

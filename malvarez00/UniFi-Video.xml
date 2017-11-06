@@ -4,9 +4,9 @@
   <Repository>malvarez00/docker-unifi-video</Repository>
   <Registry>https://hub.docker.com/r/malvarez00/docker-unifi-video</Registry>
   <Network>bridge</Network>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/61187-support-malvarez00-unifi-video/</Support>
-  <Overview>Docker-UniFi-Video&amp;lt;br /&amp;gt;&#xD;
+  <Overview>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
  7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;
@@ -22,9 +22,9 @@ Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
   <WebUI>https://[IP]:[PORT:7443]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/unifi_96x96.png</Icon>
-  <ExtraParams>--cap-add=DAC_READ_SEARCH  --cap-add=NET_BIND_SERVICE --cap-add=SETGID --cap-add=SETUID --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --privileged</ExtraParams>
-  <DateInstalled>1509769622</DateInstalled>
-  <Description>Docker-UniFi-Video&amp;lt;br /&amp;gt;&#xD;
+  <ExtraParams>--cap-add=DAC_READ_SEARCH  --cap-add=NET_BIND_SERVICE --cap-add=SETGID --cap-add=SETUID --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE</ExtraParams>
+  <DateInstalled>1509988076</DateInstalled>
+  <Description>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
  7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;

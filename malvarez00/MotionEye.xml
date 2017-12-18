@@ -18,14 +18,15 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1509211929</DateInstalled>
+  <DateInstalled>1513569955</DateInstalled>
   <Description>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
 A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 It's easy and ready to use. Just configure a camera and run this docker, then videos and images will be saved once a motion is detected while a notification e-mail including the recorded video and a preview image will be sent. On top of that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Default Username: admin&amp;lt;br /&amp;gt;&#xD;
-Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
+Default Password: BLANK&amp;lt;br /&amp;gt;
+</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -49,16 +50,20 @@ Default Password: BLANK&amp;lt;br /&amp;gt;</Description>
     </Volume>
   </Data>
   <Environment>
-  	<Variable>
-      <Name>PUID</Name>
+    <Variable>
       <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
     </Variable>
     <Variable>
-      <Name>PGID</Name>
       <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
     </Variable>
-  </Environment>  
+  </Environment>
   <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="false" Mask="false">8765</Config>
   <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/cache/appdata/MotionEye/config" Mode="rw" Description="Container Path: /etc/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/MotionEye/config</Config>
   <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/user/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/MotionEye/media</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 </Container>

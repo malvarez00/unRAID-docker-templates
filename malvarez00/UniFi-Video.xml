@@ -8,17 +8,18 @@
   <Support>https://forums.lime-technology.com/topic/61187-support-malvarez00-unifi-video/</Support>
   <Overview>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
-Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
- 7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 6666 - TCP - Inbound Camera Streams (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7004 - UDP - UVC-Micro Talkback (Camera Side)&amp;lt;br /&amp;gt;&#xD;
- 7080 - TCP - HTTP Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7442 - TCP - Camera Management (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7443 - TCP - HTTPS Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7445 - TCP - Video over HTTP&amp;lt;br /&amp;gt;&#xD;
- 7446 - TCP - Video over HTTPS&amp;lt;br /&amp;gt;&#xD;
- 7447 - TCP - RTSP via the controller&amp;lt;br /&amp;gt;</Overview>
-  <Category/>
+    Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
+     7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     6666 - TCP - Inbound Camera Streams (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7004 - UDP - UVC-Micro Talkback (Camera Side)&amp;lt;br /&amp;gt;&#xD;
+     7080 - TCP - HTTP Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7442 - TCP - Camera Management (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7443 - TCP - HTTPS Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7445 - TCP - Video over HTTP&amp;lt;br /&amp;gt;&#xD;
+     7446 - TCP - Video over HTTPS&amp;lt;br /&amp;gt;&#xD;
+     7447 - TCP - RTSP via the controller&amp;lt;br /&amp;gt;
+  </Overview>
+  <Category>Network: Media Servers:</Category>
   <WebUI>https://[IP]:[PORT:7443]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/unifi_96x96.png</Icon>
@@ -26,16 +27,17 @@ Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
   <DateInstalled>1509988076</DateInstalled>
   <Description>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
-Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
- 7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 6666 - TCP - Inbound Camera Streams (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7004 - UDP - UVC-Micro Talkback (Camera Side)&amp;lt;br /&amp;gt;&#xD;
- 7080 - TCP - HTTP Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7442 - TCP - Camera Management (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7443 - TCP - HTTPS Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
- 7445 - TCP - Video over HTTP&amp;lt;br /&amp;gt;&#xD;
- 7446 - TCP - Video over HTTPS&amp;lt;br /&amp;gt;&#xD;
- 7447 - TCP - RTSP via the controller&amp;lt;br /&amp;gt;</Description>
+    Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
+     7022 - TCP - SSH (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     6666 - TCP - Inbound Camera Streams (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7004 - UDP - UVC-Micro Talkback (Camera Side)&amp;lt;br /&amp;gt;&#xD;
+     7080 - TCP - HTTP Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7442 - TCP - Camera Management (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7443 - TCP - HTTPS Web UI &amp;amp; API (NVR Side)&amp;lt;br /&amp;gt;&#xD;
+     7445 - TCP - Video over HTTP&amp;lt;br /&amp;gt;&#xD;
+     7446 - TCP - Video over HTTPS&amp;lt;br /&amp;gt;&#xD;
+     7447 - TCP - RTSP via the controller&amp;lt;br /&amp;gt;
+  </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

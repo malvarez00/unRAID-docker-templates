@@ -7,7 +7,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Overview>GitLab Community Edition docker image based on the Omnibus package</Overview>
-  <Category/>
+  <Category>Network: Backup:</Category>
   <WebUI>http://[IP]:[PORT:9080]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/gitlab_96x96.png</Icon>

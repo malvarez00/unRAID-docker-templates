@@ -4,28 +4,42 @@
   <Repository>malvarez00/docker-motioneye</Repository>
   <Registry>https://hub.docker.com/r/malvarez00/docker-motioneye</Registry>
   <Network>bridge</Network>
+  <MyIP/>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/61014-support-malvarez00-motioneye/</Support>
+  <Project/>
   <Overview>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
 A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 It's easy and ready to use. Just configure a camera and run this docker, then videos and images will be saved once a motion is detected while a notification e-mail including the recorded video and a preview image will be sent. On top of that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Default Username: admin&amp;lt;br /&amp;gt;&#xD;
-Default Password: BLANK&amp;lt;br /&amp;gt;</Overview>
-  <Category>Network: Media Servers:</Category>
+Default Password: BLANK&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br/&amp;gt;&#xD;
+Root Directory "/var/lib/motioneye/&#xD;
+&#xD;
+</Overview>
+  <Category/>
   <WebUI>http://[IP]:[PORT:8765]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1513569955</DateInstalled>
+  <PostArgs/>
+  <DateInstalled>1519440420</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
   <Description>MotionEye Docker&amp;lt;br /&amp;gt;&#xD;
 A surveillance solution base on: MotionEye, Motion and Docker.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 It's easy and ready to use. Just configure a camera and run this docker, then videos and images will be saved once a motion is detected while a notification e-mail including the recorded video and a preview image will be sent. On top of that, the webcam can be accessed anytime via HTTP live streaming.&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
 Default Username: admin&amp;lt;br /&amp;gt;&#xD;
-Default Password: BLANK&amp;lt;br /&amp;gt;
+Default Password: BLANK&amp;lt;br /&amp;gt;&#xD;
+&amp;lt;br/&amp;gt;&#xD;
+Root Directory "/var/lib/motioneye/&#xD;
+&#xD;
 </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -44,7 +58,7 @@ Default Password: BLANK&amp;lt;br /&amp;gt;
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/MotionEye/media</HostDir>
+      <HostDir>/mnt/user/data/MotionEye</HostDir>
       <ContainerDir>/var/lib/motioneye</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -63,7 +77,7 @@ Default Password: BLANK&amp;lt;br /&amp;gt;
   </Environment>
   <Config Name="WEB UI" Target="8765" Default="8765" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always-hide" Required="false" Mask="false">8765</Config>
   <Config Name="Configuration Path" Target="/etc/motioneye" Default="/mnt/cache/appdata/MotionEye/config" Mode="rw" Description="Container Path: /etc/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/MotionEye/config</Config>
-  <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/user/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/MotionEye/media</Config>
+  <Config Name="Media Files Path" Target="/var/lib/motioneye" Default="/mnt/user/appdata/MotionEye/media" Mode="rw" Description="Container Path: /var/lib/motioneye" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/data/MotionEye</Config>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 </Container>

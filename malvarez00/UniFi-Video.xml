@@ -4,8 +4,10 @@
   <Repository>malvarez00/docker-unifi-video</Repository>
   <Registry>https://hub.docker.com/r/malvarez00/docker-unifi-video</Registry>
   <Network>bridge</Network>
+  <MyIP/>
   <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/61187-support-malvarez00-unifi-video/</Support>
+  <Project/>
   <Overview>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
     Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;
@@ -24,7 +26,12 @@
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/unifi_96x96.png</Icon>
   <ExtraParams>--cap-add=DAC_READ_SEARCH  --cap-add=NET_BIND_SERVICE --cap-add=SETGID --cap-add=SETUID --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE</ExtraParams>
-  <DateInstalled>1515994071</DateInstalled>
+  <PostArgs/>
+  <DateInstalled>1519444165</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
   <Description>&amp;lt;b&amp;gt;Docker-UniFi-Video&amp;lt;/b&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 &amp;lt;br /&amp;gt;&#xD;
     Port - Type (TCP/UDP) - Purpose&amp;lt;br /&amp;gt;&#xD;

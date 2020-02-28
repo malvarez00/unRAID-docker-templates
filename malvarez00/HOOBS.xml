@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=50362.0</Support>
+  <Support>https://forums.unraid.net/topic/89206-support-malvarez00-hoobs/</Support>
   <Project/>
   <Overview>HOOBS is a Homebridge stack with a interface that simplifies configuration and installing plugins. This adds a process wrapper for Homebridge.  &#xD;
 It also adds an API that can be used as an endpoint for an application.&#xD;

@@ -20,6 +20,7 @@ Root Directory "/var/lib/motioneye/&#xD;
 &#xD;
 </Overview>
   <Category>Network:</Category>
+  <Beta>False</Beta>
   <WebUI>http://[IP]:[PORT:8765]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/motioneye_96x96.png</Icon>

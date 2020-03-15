@@ -7,6 +7,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Overview>GitLab Community Edition docker image based on the Omnibus package</Overview>
+  <Beta>False</Beta>
   <Category>Network: Backup:</Category>
   <WebUI>http://[IP]:[PORT:9080]</WebUI>
   <TemplateURL/>

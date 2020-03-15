@@ -29,6 +29,7 @@ Global Modules Path -&amp;gt; /usr/lib/node_modules&#xD;
 &amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&#xD;
 For More Information visit:&amp;lt;a href="https://hoobs.org/"&amp;gt;https://hoobs.org/&amp;lt;/a&amp;gt;</Overview>
   <Category>HomeAutomation: Tools:</Category>
+  <Beta>False</Beta>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/HOOBS.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/malvarez00/unRAID-Docker-Templates/master/malvarez00/icons/hoobs_96x96.png</Icon>

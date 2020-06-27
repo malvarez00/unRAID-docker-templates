@@ -83,6 +83,6 @@ For More Information visit:&amp;lt;a href="https://hoobs.org/"&amp;gt;https://ho
   <Environment/>
   <Labels/>
   <Config Name="Application Path" Target="/hoobs" Default="/mnt/user/appdata/hoobs/" Mode="rw" Description="Container Path: /hoobs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hoobs/</Config>
-  <Config Name="Homebridge Port" Target="51826" Default="51826" Mode="tcp" Description="Container Port: 512826" Type="Port" Display="always" Required="true" Mask="false">51826</Config>
+  <Config Name="Homebridge Port" Target="51826" Default="51826" Mode="tcp" Description="Container Port: 51826" Type="Port" Display="always" Required="true" Mask="false">51826</Config>
   <Config Name="Server Port" Target="8080" Default="8282" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
 </Container>

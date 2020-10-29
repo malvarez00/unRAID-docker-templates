@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>HOOBS</Name>
-  <Repository>hoobs/hoobs:3.2.9</Repository>
+  <Repository>hoobs/hoobs</Repository>
   <Registry>https://hub.docker.com/r/hoobs/hoobs</Registry>
   <Network>bridge</Network>
   <MyIP/>
